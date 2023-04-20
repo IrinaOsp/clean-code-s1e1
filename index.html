@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="en">
     <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Todo App</title>
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-      <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="style.css" media="screen">
     </head>
   <body class="body">
     <div class="wrapper intro">
@@ -36,11 +38,11 @@
             </button>
             <!-- <button class="delete"><img src="./remove.svg" alt="remove task icon"></button> -->
           </li>
-          <li class="todo__task todo__task_edit">
+          <li class="todo__task">
             <input class="todo__input-checkbox" type="checkbox">
             <label class="todo__input-label todo__input-label_hidden">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="todo__input-text todo__input-text_edit">
-            <button class="todo__button">Save</button>
+            <input type="text" value="Go Shopping" class="todo__input-text">
+            <button class="todo__button todo__button_edit">Save</button>
             <button class="todo__button todo__button_delete">
               <img src="./remove.svg" alt="remove task icon" class="todo__delete-img">
             </button>
@@ -54,8 +56,8 @@
           <li class="todo__task">
             <input class="todo__input-checkbox" type="checkbox" checked>
             <label class="todo__input-label todo__input-label_completed-task">See the Doctor</label>
-            <input type="text" class="todo__input-text_hidden">
-            <button class="todo__button">Edit</button>
+            <input type="text" class="todo__input-text todo__input-text_hidden">
+            <button class="todo__button todo__button_edit">Edit</button>
             <button class="todo__button todo__button_delete">
               <img src="./remove.svg" alt="remove task icon" class="todo__delete-img">
             </button>
